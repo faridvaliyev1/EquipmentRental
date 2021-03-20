@@ -14,5 +14,7 @@ namespace EquipmentRental.Models
        public string Name { get; set; }
 
        public int Type_id { get; set; } 
+
+       public virtual IEnumerable<Order> Orders { get; set; }
     }
 }

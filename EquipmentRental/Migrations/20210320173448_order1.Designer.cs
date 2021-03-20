@@ -4,14 +4,16 @@ using EquipmentRental.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EquipmentRental.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210320173448_order1")]
+    partial class order1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,16 +78,11 @@ namespace EquipmentRental.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("EquipmentId")
-                        .HasColumnType("int");
-
                     b.Property<string>("UserId")
                         .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("EquipmentId");
 
                     b.HasIndex("UserId");
 
@@ -293,17 +290,9 @@ namespace EquipmentRental.Migrations
 
             modelBuilder.Entity("EquipmentRental.Models.Order", b =>
                 {
-                    b.HasOne("EquipmentRental.Models.Equipment", "Equipment")
-                        .WithMany("Orders")
-                        .HasForeignKey("EquipmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("EquipmentRental.Models.User", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserId");
-
-                    b.Navigation("Equipment");
 
                     b.Navigation("User");
                 });
@@ -357,11 +346,6 @@ namespace EquipmentRental.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("EquipmentRental.Models.Equipment", b =>
-                {
-                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("EquipmentRental.Models.User", b =>

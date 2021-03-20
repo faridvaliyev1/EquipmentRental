@@ -7,6 +7,8 @@ namespace EquipmentRental.Models
     {
        public int LoyaltyBalance { get; set; }
 
-       
+       public virtual IEnumerable<Order> Orders { get; set; }
+
+
     }
 }

@@ -14,6 +14,7 @@ namespace EquipmentRental.Data
         }
 
         public DbSet<Equipment> Equipments { get; set; }
+        public DbSet<Order> Orders { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Equipment>().HasData(new List<Equipment>
