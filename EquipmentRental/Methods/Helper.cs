@@ -5,13 +5,20 @@ using System.Threading.Tasks;
 
 namespace EquipmentRental.Methods
 {
-    public static class Pricing
+    public static class Helper
     {
         private static int one_time = 100;
 
         private static int premium = 60;
 
         private static int regular = 40;
+
+        public static readonly Dictionary<int, string> EquipmentTypes = new Dictionary<int, string>
+        {
+            {1,"Specialized" },
+            {2,"Regular" },
+            {3, "Heavy"}
+        };
 
         public static int Calculate(int number_of_days,int Type_id)
         {
