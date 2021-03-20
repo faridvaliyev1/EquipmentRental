@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using EquipmentRental;
+using EquipmentRental.Repositories.Interfaces;
+using EquipmentRental.Repositories;
 
 namespace Catstagram.Server.Infrastructure
 {
@@ -38,6 +40,8 @@ namespace Catstagram.Server.Infrastructure
         }
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+
+            services.AddScoped<IEquipmentRepository, EquipmentRepository>();
             return services;
         }
 

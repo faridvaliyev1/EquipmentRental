@@ -19,6 +19,56 @@ namespace EquipmentRental.Migrations
                 .HasAnnotation("ProductVersion", "5.0.4")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("EquipmentRental.Models.Equipment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Type_id")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Equipments");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Caterpillar bulldozer",
+                            Type_id = 3
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "KamAZ truck",
+                            Type_id = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Komatsu crane",
+                            Type_id = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Volvo steamroller",
+                            Type_id = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Bosch jackhammer",
+                            Type_id = 1
+                        });
+                });
+
             modelBuilder.Entity("EquipmentRental.Models.User", b =>
                 {
                     b.Property<string>("Id")
@@ -43,6 +93,9 @@ namespace EquipmentRental.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("LoyaltyBalance")
+                        .HasColumnType("int");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)

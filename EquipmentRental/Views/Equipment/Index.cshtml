@@ -1,0 +1,26 @@
+﻿@using EquipmentRental.Models
+
+@model IEnumerable<Equipment>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Type</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var equipment in Model)
+        {
+        <tr>
+            <th scope="row">@equipment.Id</th>
+            <td>@equipment.Name</td>
+            <td>@equipment.Type_id</td>
+            <td><a class="btn btn-success">Order</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
+ 
