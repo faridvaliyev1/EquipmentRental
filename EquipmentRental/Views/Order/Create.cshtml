@@ -1,0 +1,19 @@
+﻿@using EquipmentRental.ViewModel
+@using EquipmentRental.Methods
+@model CreateOrderRequestModel
+
+<form asp-action="create" method="post" asp-controller="order">
+    <input hidden="hidden" asp-for="@Model.EquipmentId" value="@Model.EquipmentId" />
+    <input hidden="hidden" asp-for="@Model.Type_id" value="@Model.Type_id" />
+    
+    <h3>Name: @Model.EquipmentName</h3>
+
+    <br />
+    <h3>Type: @Helper.EquipmentTypes[Model.Type_id]</h3>
+    <br />
+    <h3>Number of days to rent</h3>
+    <br />
+    <input asp-for="@Model.number_of_days" type="text" class="form-control" />
+    <br />
+    <input type="submit" value="Order" class="btn btn-success" />
+</form>

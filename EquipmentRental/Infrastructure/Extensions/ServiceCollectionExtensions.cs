@@ -42,6 +42,7 @@ namespace Catstagram.Server.Infrastructure
         {
 
             services.AddScoped<IEquipmentRepository, EquipmentRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             return services;
         }
 

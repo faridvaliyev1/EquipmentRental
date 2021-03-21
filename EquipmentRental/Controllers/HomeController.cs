@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace EquipmentRental.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : CustomController
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -18,8 +18,6 @@ namespace EquipmentRental.Controllers
         {
             _logger = logger;
         }
-
-        [Authorize]
         public IActionResult Index()
         {
             return View();

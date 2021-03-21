@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace EquipmentRental.Controllers
 {
-    public class EquipmentController : Controller
+    public class EquipmentController :CustomController
     {
 
         private readonly IEquipmentRepository _equipmentRepository;

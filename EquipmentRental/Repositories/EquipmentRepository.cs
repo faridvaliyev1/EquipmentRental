@@ -15,6 +15,12 @@ namespace EquipmentRental.Repositories
         {
             _context = context;
         }
+
+        public async Task<Equipment> GetEquipmentDetail(int id)
+        {
+            return await _context.Equipments.FindAsync(id);
+        }
+
         public async Task<IEnumerable<Equipment>> GetEquipments()
         {
             return await _context.Equipments.ToListAsync();

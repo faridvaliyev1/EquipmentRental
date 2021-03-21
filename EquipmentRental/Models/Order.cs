@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -17,5 +18,11 @@ namespace EquipmentRental.Models
        public int EquipmentId { get; set; }
 
        public Equipment Equipment { get; set; }
+
+       public DateTime Create_date { get; set; }
+
+       public int Days { get; set; }
+
+       public int Price { get; set; }
     }
 }
