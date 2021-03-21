@@ -157,3 +157,5 @@ C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\obj\Debug\net5.0\Raz
 C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\EPPlus.dll
 C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\NLog.dll
+C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\nlog.config

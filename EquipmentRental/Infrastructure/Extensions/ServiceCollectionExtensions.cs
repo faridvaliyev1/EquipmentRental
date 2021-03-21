@@ -9,6 +9,7 @@ using System.Text;
 using EquipmentRental;
 using EquipmentRental.Repositories.Interfaces;
 using EquipmentRental.Repositories;
+using EquipmentRental.Logging;
 
 namespace Catstagram.Server.Infrastructure
 {
@@ -43,6 +44,7 @@ namespace Catstagram.Server.Infrastructure
 
             services.AddScoped<IEquipmentRepository, EquipmentRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddSingleton<ILog, LogNLog>();
             return services;
         }
 

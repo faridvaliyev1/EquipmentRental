@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WQ0+Zussmixbnp8z+D/qU/SpoFn90iEzQL5nTdqdN/EisWSA2rSWrZMR0o1MfAu3ehlcnhQUz9qE1iNxO5/EhQ==",
+  "dgSpecHash": "1P1uJmNN3nllDoN+qWGEDoytOXIVa0rBJWk6CnQKQW9L4Yx9Vkvg7S11Bb9PsXgFqZgzFrP62IOaBJQJNn5PdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Farid\\source\\repos\\EquipmentRental\\EquipmentRental\\EquipmentRental.csproj",
   "expectedPackageFiles": [
@@ -68,6 +68,7 @@
     "C:\\Users\\Farid\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Farid\\.nuget\\packages\\nlog\\4.7.8\\nlog.4.7.8.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ENe/dlCiHIdvStlqg2FeRlnRETviPTov7okdl2OrCFe33iLuq5/XmYMwx5LZuqfrHE5AUkv27KXx/9AaDavkAg==",
+  "dgSpecHash": "+LTSamR3NdyJfmplENBY6JDvzzilM0kVBK8zE9CTjdTZTPYdM471H8fr4yw4kM0Luln8TY5TAjAvYLQ9vweKOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Farid\\source\\repos\\EquipmentRental\\EquipmentRentalTest\\EquipmentRentalTest.csproj",
   "expectedPackageFiles": [
@@ -75,6 +75,7 @@
     "C:\\Users\\Farid\\.nuget\\packages\\mstest.testframework\\2.1.1\\mstest.testframework.2.1.1.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Farid\\.nuget\\packages\\nlog\\4.7.8\\nlog.4.7.8.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\nuget.frameworks\\5.0.0\\nuget.frameworks.5.0.0.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Farid\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
