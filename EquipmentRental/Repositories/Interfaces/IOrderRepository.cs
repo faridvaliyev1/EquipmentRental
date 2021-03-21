@@ -10,6 +10,6 @@ namespace EquipmentRental.Repositories.Interfaces
     public interface IOrderRepository
     {
         public Task<Order> AddOrder(CreateOrderRequestModel model);
-        public Task<IEnumerable<Order>> GetOrders(string UserId);
+        public Task<List<Order>> GetOrders(string UserId);
     }
 }

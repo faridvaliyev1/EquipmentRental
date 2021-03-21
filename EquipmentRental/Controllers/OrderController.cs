@@ -1,8 +1,10 @@
-﻿using EquipmentRental.Models;
+﻿using EquipmentRental.Methods;
+using EquipmentRental.Models;
 using EquipmentRental.Repositories.Interfaces;
 using EquipmentRental.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace EquipmentRental.Controllers
@@ -61,6 +63,25 @@ namespace EquipmentRental.Controllers
             {
                 return View(model);
             }
+        }
+
+
+        public async Task<IActionResult> GetInvoice()
+        {
+           var user = await _userManager.GetUserAsync(HttpContext.User);
+
+            var orders =await _orderRepository.GetOrders(user.Id);
+
+            var bytes=Helper.GenerateReport(orders);
+
+            if (bytes == null || bytes.Length == 0)
+                return NotFound();
+            else
+                return File(
+                    fileContents: bytes,
+                    contentType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    fileDownloadName: $"Report-{DateTime.Now}.xlsx"
+                  );
         }
 
     }

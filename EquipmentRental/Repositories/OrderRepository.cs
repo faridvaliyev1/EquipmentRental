@@ -38,9 +38,9 @@ namespace EquipmentRental.Repositories
            return order;
         }
 
-        public async Task<IEnumerable<Order>> GetOrders(string UserId)
+        public async Task<List<Order>> GetOrders(string UserId)
         {
-            return await _context.Orders.ToListAsync();
+            return await _context.Orders.Where(c=>c.UserId==UserId).Include(x=>x.Equipment).ToListAsync();
         }
     }
 }

@@ -154,3 +154,6 @@ C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\run
 C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\obj\Debug\net5.0\Razor\Views\Equipment\Index.cshtml.g.cs
 C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\obj\Debug\net5.0\Razor\Views\Order\Create.cshtml.g.cs
+C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\EPPlus.dll
+C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Farid\source\repos\EquipmentRental\EquipmentRental\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
