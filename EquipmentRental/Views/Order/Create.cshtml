@@ -13,7 +13,19 @@
     <br />
     <h3>Number of days to rent</h3>
     <br />
-    <input asp-for="@Model.number_of_days" type="text" class="form-control" />
+    <input asp-for="@Model.number_of_days" pattern="[0-9]+" type="text" class="form-control" onkeypress='return validateNumber(event)' />
     <br />
     <input type="submit" value="Order" class="btn btn-success" />
 </form>
+
+<script>
+    
+    function validateNumber(event) {
+        var key = window.event ? event.keyCode : event.which;
+        if (key < 48 || key > 57) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
